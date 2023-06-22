@@ -1,0 +1,98 @@
+<!-- Task 1: Welcome to the Registration Form project! Start by adding the !DOCTYPE html declaration at the top of the document so the browser knows what type of document it's reading. -->
+<!DOCTYPE html>
+<!-- Task 2: Below the DOCTYPE, add an html element with a lang attribute set to en, so that you have a place to start putting some code. -->
+<html lang="en">
+<!-- Task 3: Next, add opening and closing head and body tags within the html element. -->
+
+<head>
+    <!-- Task 4: Add a title and a meta element to the head. Give your project a title of Registration Form, and give a charset attribute with a value of UTF-8 to your meta element. -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Task 5: Nest a self-closing link element within the head element. Give it a rel attribute with value of stylesheet and an href attribute with a value of styles.css. -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <!-- Task 6: Within the body, provide a heading context for the content, by adding an h1 with the text Registration Form. -->
+    <h1>Registration Form</h1>
+    <!-- Task 7: Below the heading, use the following text within a paragraph element to encourage users to register: Please fill out this form with the required information -->
+    <p>Please fill out this form with the required information</p>
+    <!-- Task 11: As suggested by the title, you are creating a form. So, after the p element, insert a form with an action attribute targeting https://register-demo.freecodecamp.org. -->
+    <!-- Task 12: Set the method attribute to send your form data via a POST request. -->
+    <form action="https://register-demo.freecodecamp.org" method="post">
+        <!-- Task 13: As the form will have three distinct sections, add three fieldset elements within the form element. -->
+        <fieldset>
+            <!-- Task 14: The first fieldset will hold name, email, and password fields. Start by adding four label elements to the first fieldset. -->
+            <!-- Task 15: Add the following text to the label elements: "Enter Your First Name:","Enter Your Last Name","Enter Your Email:","Create a New Password:" -->
+            <!-- Task 17: Nest an input element within each label. Be sure to add each input after the label text, and include a space after the colon. -->
+            <!-- Task 18 (1): Following accessibility best practices, link the input elements and the label elements together using the for attribute. -->
+            <!-- Task 18 (2): Use first-name, last-name, email, and new-password as values for the respective id attributes.-->
+            <!-- Task 19: Give the first two input elements a type attribute of text, the third a type attribute of email, and the fourth a type attribute of password. -->
+            <!-- Task 21: To make the form more interactive, add the required attribute to the input elements in the first fieldset. -->
+            <!-- Task 23 (1): Add a pattern attribute to the password input element to require the input match: [a-z0-5]{8,} -->
+            <!-- Task 23 (2): Then, remove the minlength attribute, and try it out. -->
+            <!-- Task 41: Give each submittable element a unique name attribute of your choosing, except for the two radio inputs. -->
+            <label for="first-name">Enter Your First Name: <input id="first-name" type="text" name="first-name"
+                    required></label>
+            <label for="last-name">Enter Your Last Name: <input id="last-name" type="text" name="last-name"
+                    required></label>
+            <label for="email">Enter Your Email: <input id="email" type="email" name="email" required></label>
+            <label for="new-password">Create a New Password: <input id="new-password" type="password"
+                    name="new-password" pattern="[a-z0-5]{8,}" required></label>
+        </fieldset>
+        <!-- Task 24: Start by adding three label elements to the second fieldset. -->
+        <fieldset>
+            <!-- Task 25: To do this, within each of the first two label elements, add one input element with type="radio". -->
+            <!-- Task 27: Within each corresponding label element, and immediately after the input element, add a space and add the following text: "Personal Account","Business Account","I accept the terms and conditions"-->
+            <!-- Task 28: To relate the radio inputs, give them the same name attribute with a value of account-type. Now, it is not possible to select both radio inputs at the same time. -->
+            <!-- Task 29 (1): Follow accessibility best practices by linking the input elements and the label elements in the second fieldset. -->
+            <!-- Task 29 (2): Use personal-account, business-account, and terms-and-conditions as values for the respective id attributes. -->
+            <!-- Task 49: Start, by giving the input elements in the second fieldset a class of inline. -->
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline">
+                Personal
+                Account</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline">
+                Business
+                Account</label>
+            <!-- Task 26: For the terms and conditions, add an input with a type of checkbox to the third label element. Make this input element required because users should not sign up without reading the terms and conditions. -->
+            <!-- Task 30: To finish this fieldset off, link the text terms and conditions in the third label to the following location: "https://freecodecamp.org/news/terms-of-service/" -->
+            <label for="terms-and-conditions"><input id="terms-and-conditions" type="checkbox"
+                    name="terms-and-conditions" class="inline" required> I accept the <a
+                    href="https:/www.freecodecamp.org/news/terms-of=service/">terms and conditions</a></label>
+        </fieldset>
+        <fieldset>
+            <!-- Task 31: Well, the input type file allows just that. Add a label with the text "Upload a profile picture:" , and nest an input accepting a file upload. -->
+            <!-- Task 38: Use "profile-picture", "age", "referrer", and "bio" as values for the respective "id" attributes. -->
+            <label for="profile-picture">Upload a profile picture: <input id="profile-picture" type="file"
+                    name="profile-picture"></label>
+            <!-- Task 32 (1): Add another label after the first, with the text Input your age (years): . Then, nest an input with the type of number -->
+            <!-- Task 32 (2): Next, add a min attribute to the input with a value of 13 because users under the age of 13 should not register. Also, users probably will not be over the age of 120; add a max attribute with a value of 120. -->
+            <label for="age">Input your age (years): <input id="age" type="number" min="13" max="120"
+                    name="age"></label>
+            <!-- Task 33: Start by adding a "select" element below the two "label" elements. Then nest 5 "option" elements within the select element. -->
+            <!-- Task 34: Nest the "select" element (with its "option" elements) within a "label" element with the text "How did you hear about us?"". The text should come before the "select" element. -->
+            <label for="referrer">
+                How did you hear about us?
+                <select name="referrer" id="referrer">
+                    <!-- Task 35: The dropdown options are currently empty. To give them content, add the following text to each subsequent "option" element: "(select one)","freeCodeCamp News","freeCodeCamp Youtube Channel","freeCodeCamp Forum","other". -->
+                    <!-- Task 36: Give the first option a value of "", and the subsequent option elements value attributes from 1 to 4. -->
+                    <option value="">(Select One)</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+            </label>
+            <!-- Task 37: Users will be able to register with a bio. Add a label with the text Provide a bio: at the end of the fieldset. Add a textarea element inside the label element. Note that the textarea requires a closing tag. -->
+            <!-- Task 39: Add an initial size of 3 "rows" and 30 "columns." -->
+            <!-- Task 40: Give the textarea a "placeholder" of "I like coding on the beach...." -->
+            <label for="bio">Provide a bio: <textarea id="bio" rows="3" cols="30" name="bio"
+                    placeholder="I like coding on the beach..."></textarea></label>
+        </fieldset>
+        <!-- Task 20: To handle the form submission, after the last fieldset element add an input element with the type attribute set to submit and the value attribute set to Submit. -->
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

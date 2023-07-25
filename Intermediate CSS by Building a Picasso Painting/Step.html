@@ -1,0 +1,710 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1 style="text-align: center;">Intermediate CSS by Building a Picasso Painting</h1>
+    <hr class="border-5">
+    <h3>HTML File</h3>
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 1</div>
+                Start by setting up your HTML structure. Add a <kbd>!DOCTYPE</kbd> declaration and an <kbd>html</kbd>
+                element with a <kbd>lang</kbd> attribute set to <kbd>en</kbd>. Within the <kbd>html</kbd> element, add a
+                <kbd>head</kbd> element and a <kbd>body</kbd> element.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 2</div>
+                Within your <kbd>head</kbd> element, add a <kbd>meta</kbd> tag with the <kbd>charset</kbd> attribute set
+                to <kbd>utf-8</kbd>. Also add a title element with the text <kbd>Picasso Painting</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 3</div>
+                <p>Go ahead and link your CSS file now, even though you have not written any CSS yet.</p>
+                <p>Add a <kbd>link</kbd> element with a <kbd>rel</kbd> of <kbd>stylesheet</kbd> and an <kbd>href</kbd>
+                    of <kbd>styles.css</kbd>.</p>
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 4</div>
+                <p>FontAwesome is a library of SVG-powered icons, many of which are freely available to use. You will be
+                    using some of these icons in this project, so you will need to link the external stylesheet to your
+                    HTML.</p>
+                <p>Add a <kbd>link</kbd> element with a <kbd>rel</kbd> of <kbd>stylesheet</kbd> and an <kbd>href</kbd>
+                    of <kbd>https://use.fontawesome.com/releases/v5.8.2/css/all.css</kbd>.</p>
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 6</div>
+                Within your body tag, add a <kbd>div</kbd> element. Give it an <kbd>id</kbd> of <kbd>back-wall</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 11</div>
+                Below your <kbd>#back-wall</kbd> element, create a <kbd>div</kbd> with a class of <kbd>characters</kbd>.
+                This is where you will be creating your painting's characters.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 12</div>
+                Inside that <kbd>.characters</kbd> element, create another <kbd>div</kbd> with an <kbd>id</kbd> of
+                <kbd>offwhite-character</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 13</div>
+                Create four <kbd>div</kbd> elements inside your <kbd>offwhite-character</kbd> element. Give those
+                <kbd>div</kbd> elements the following <kbd>id</kbd> values, in order: <kbd>white-hat</kbd>,
+                <kbd>black-mask</kbd>, <kbd>gray-instrument</kbd>, <kbd>tan-table</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 14</div>
+                This character needs eyes. Create two <kbd>div</kbd> elements in the <kbd>#black-mask</kbd> element.
+                Give them the classes <kbd>eyes left</kbd> and <kbd>eyes right</kbd>, in that order.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 15</div>
+                Create some "dots" for the instrument. Add five <kbd>div</kbd> elements within your
+                <kbd>#gray-instrument</kbd> element. Set the <kbd>class</kbd> of each to <kbd>black-dot</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 34</div>
+                After your <kbd>div#offwhite-character</kbd> element, add a <kbd>div</kbd> with the <kbd>id</kbd> of
+                <kbd>black-character</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 35</div>
+                Within your new <kbd>#black-character</kbd> element, add three <kbd>div</kbd> elements with the
+                following <kbd>id</kbd> values, in order: <kbd>black-hat</kbd>, <kbd>gray-mask</kbd>,
+                <kbd>white-paper</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 36</div>
+                The mask needs eyes. Within your <kbd>#gray-mask</kbd> element, add two <kbd>div</kbd> elements. The
+                first should have the <kbd>class</kbd> set to <kbd>eyes left</kbd>, and the second should have the
+                <kbd>class</kbd> set to <kbd>eyes right</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 37</div>
+                <p>Time to use some FontAwesome icons.</p>
+                <p>The <kbd>i</kbd> element is used for idiomatic text, or text that is separate from the "normal" text
+                    content. This could be for italic text, such as scientific terms, or for icons like those provided
+                    by FontAwesome.</p>
+                <p>Within your <kbd>#white-paper</kbd> element, add four <kbd>i</kbd> elements. Give them all a
+                    <kbd>class</kbd> value of <kbd>fas fa-music</kbd>.</p>
+                <p>This special class is how FontAwesome determines which icon to load. <kbd>fas</kbd> indicates the
+                    category of icons (FontAwesome Solid, here), while <kbd>fa-music</kbd> selects the specific icon.
+                </p>
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 50</div>
+                Below your <kbd>#black-character</kbd> element, add two new <kbd>div</kbd> elements. These will be the
+                shawl. Give both of them a class of <kbd>blue</kbd>. Then give the first one an <kbd>id</kbd> of
+                <kbd>blue-left</kbd>, and the second an <kbd>id</kbd> of <kbd>blue-right</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 56</div>
+                Below your <kbd>.blue</kbd> elements, add another <kbd>div</kbd>. Give it the <kbd>id</kbd> value of
+                <kbd>orange-character</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 57</div>
+                Within that <kbd>#orange-character</kbd> element, add four <kbd>div</kbd> elements. Give them the
+                <kbd>id</kbd> values of <kbd>black-round-hat</kbd>, <kbd>eyes-div</kbd>, <kbd>triangles</kbd>, and
+                <kbd>guitar</kbd>, in order.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 58</div>
+                The <kbd>#eyes-div</kbd> element should hold some eyes. Add two <kbd>div</kbd> elements inside. Give the
+                first a <kbd>class</kbd> of <kbd>eyes left</kbd>, and give the second a <kbd>class</kbd> of <kbd>eyes
+                    right</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 59</div>
+                Within the <kbd>#triangles</kbd> div, you will need to add the elements that will become your triangles.
+                Create thirty <kbd>div</kbd> elements and give each of them the class <kbd>triangle</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 60</div>
+                <p>Within the <kbd>#guitar</kbd> element, create three <kbd>div</kbd> elements. Give the first two a
+                    <kbd>class</kbd> value of <kbd>guitar</kbd>. Then give the first an <kbd>id</kbd> of
+                    <kbd>guitar-left</kbd>, and the second an <kbd>id</kbd> of <kbd>guitar-right</kbd>. Add an
+                    <kbd>id</kbd> to the third <kbd>div</kbd> with the value <kbd>guitar-neck</kbd>.</p>
+                <p>The third <kbd>div</kbd> should not have the <kbd>guitar</kbd> class.</p>
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 61</div>
+                Use another FontAwesome icon for your <kbd>.guitar</kbd>. Inside both the <kbd>#guitar-left</kbd> and
+                <kbd>#guitar-right</kbd> elements, add an <kbd>i</kbd> element and give it a <kbd>class</kbd> of
+                <kbd>fas fa-bars</kbd>.
+            </div>
+        </li>
+    </ol>
+    <hr class="border-5">
+    <h3>CSS File</h3>
+    <ol class="list-group list-group-numbered">
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 5</div>
+                To get your painting started, give your <kbd>body</kbd> element a <kbd>background-color</kbd> of
+                <kbd>rgb(184, 132, 46)</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 7</div>
+                Use an id selector to give the element with the id <kbd>back-wall</kbd> a <kbd>background-color</kbd> of
+                <kbd>#8B4513</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 8</div>
+                Give the <kbd>#back-wall</kbd> element a <kbd>width</kbd> of <kbd>100%</kbd> and a <kbd>height</kbd> of
+                <kbd>60%</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 9</div>
+                <p>Typically, HTML is rendered in a top-down manner. Elements at the top of the code are positioned at
+                    the top of the page. However, many times you may want to move the elements to different positions.
+                    You can do this with the <kbd>position</kbd> property.</p>
+                <p>Set the <kbd>position</kbd> property for the <kbd>#back-wall</kbd> element to <kbd>absolute</kbd>. An
+                    <kbd>absolute</kbd> position takes the element out of that top-down document flow and allows you to
+                    adjust it relative to its container.</p>
+                <p>When an element is manually positioned, you can shift its layout with <kbd>top</kbd>,
+                    <kbd>left</kbd>, <kbd>right</kbd>, and <kbd>bottom</kbd>. Set the <kbd>#back-wall</kbd> element to
+                    have a <kbd>top</kbd> value of <kbd>0</kbd>, and a <kbd>left</kbd> value of <kbd>0</kbd>.</p>
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 10</div>
+                <p>The <kbd>z-index</kbd> property is used to create "layers" for your HTML elements. If you are
+                    familiar with image editing tools, you may have worked with layers before. This is a similar
+                    concept.</p>
+                <p>Elements with a higher <kbd>z-index</kbd> value will appear to be layered on top of elements with a
+                    lower <kbd>z-index</kbd> value. This can be combined with the positioning in the previous lesson to
+                    create unique effects.</p>
+                <p>Since the <kbd>back-wall</kbd> element will need to appear "behind" the other elements you will be
+                    creating, give the <kbd>back-wall</kbd> element a <kbd>z-index</kbd> of <kbd>-1</kbd>.</p>
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 16</div>
+                Using an id selector, create a rule for the element with the id <kbd>offwhite-character</kbd>. Give it a
+                <kbd>width</kbd> of <kbd>300px</kbd>, a <kbd>height</kbd> of <kbd>550px</kbd>, and a
+                <kbd>background-color</kbd> of <kbd>GhostWhite</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 17</div>
+                Move the <kbd>#offwhite-character</kbd> into place by giving it a <kbd>position</kbd> of
+                <kbd>absolute</kbd>, a <kbd>top</kbd> value of <kbd>20%</kbd>, and a <kbd>left</kbd> value of
+                <kbd>17.5%</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 18</div>
+                Using an id selector, style the element with the id <kbd>white-hat</kbd>. Give it a <kbd>width</kbd> and
+                <kbd>height</kbd> of <kbd>0</kbd>, and a <kbd>border-style</kbd> of <kbd>solid</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 19</div>
+                That does not look quite right. Set a <kbd>border-width</kbd> of <kbd>0 120px 140px 180px</kbd> to size
+                the hat properly.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 20</div>
+                Now you have a large box. Give it a <kbd>border-top-color</kbd>, <kbd>border-right-color</kbd>, and
+                <kbd>border-left-color</kbd> of <kbd>transparent</kbd>. Set the <kbd>border-bottom-color</kbd> to
+                <kbd>GhostWhite</kbd>. This will make it look more like a hat.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 21</div>
+                Give the hat a <kbd>position</kbd> of <kbd>absolute</kbd>, a <kbd>top</kbd> value of <kbd>-140px</kbd>,
+                and a <kbd>left</kbd> value of <kbd>0</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 22</div>
+                Using an id selector, create a rule for the element with the id <kbd>black-mask</kbd>. Give it a
+                <kbd>width</kbd> of <kbd>100%</kbd>, a <kbd>height</kbd> of <kbd>50px</kbd>, and a
+                <kbd>background-color</kbd> of <kbd>rgb(45, 31, 19)</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 23</div>
+                Give the mask a <kbd>position</kbd> of <kbd>absolute</kbd>, and a <kbd>top</kbd> and <kbd>left</kbd>
+                value of <kbd>0</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 24</div>
+                To ensure you can see the mask, give it a <kbd>z-index</kbd> of <kbd>1</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 25</div>
+                Using an id selector, give the element with the id <kbd>gray-instrument</kbd> a <kbd>width</kbd> of
+                <kbd>15%</kbd>, a <kbd>height</kbd> of <kbd>40%</kbd>, and a <kbd>background-color</kbd> of
+                <kbd>rgb(167, 162, 117)</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 26</div>
+                Now move it into place with a <kbd>position</kbd> of <kbd>absolute</kbd>, a <kbd>top</kbd> value of
+                <kbd>50px</kbd>, and a <kbd>left</kbd> value of <kbd>125px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 27</div>
+                Set the <kbd>z-index</kbd> to <kbd>1</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 28</div>
+                Use a class selector to create a rule for the elements with <kbd>black-dot</kbd> class. Set the
+                <kbd>width</kbd> to <kbd>10px</kbd>, the <kbd>height</kbd> to <kbd>10px</kbd>, and the
+                <kbd>background-color</kbd> to <kbd>rgb(45, 31, 19)</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 29</div>
+                These dots are just a little too square. Give the <kbd>black-dot</kbd> class a <kbd>border-radius</kbd>
+                of <kbd>50%</kbd> to fix it.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 30</div>
+                Move the dots into place by setting the <kbd>display</kbd> to <kbd>block</kbd>, the <kbd>margin</kbd> to
+                <kbd>auto</kbd>, and the <kbd>margin-top</kbd> to <kbd>65%</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 31</div>
+                Use an id selector to style the element with the id <kbd>tan-table</kbd>. Give it a <kbd>width</kbd> of
+                <kbd>450px</kbd>, a <kbd>height</kbd> of <kbd>140px</kbd>, and a <kbd>background-color</kbd> of
+                <kbd>#D2691E</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 32</div>
+                Move the table into place by giving it a <kbd>position</kbd> of <kbd>absolute</kbd>, a <kbd>top</kbd>
+                value of <kbd>275px</kbd>, and a <kbd>left</kbd> value of <kbd>15px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 33</div>
+                Give the table a <kbd>z-index</kbd> of <kbd>1</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 38</div>
+                Use an id selector to create a rule for the element with the id <kbd>black-character</kbd>. Set the
+                <kbd>width</kbd> to <kbd>300px</kbd>, the <kbd>height</kbd> to <kbd>500px</kbd>, and the
+                <kbd>background-color</kbd> to <kbd>rgb(45, 31, 19)</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 39</div>
+                Move the <kbd>#black-character</kbd> element into place by setting the <kbd>position</kbd> to
+                <kbd>absolute</kbd>, the <kbd>top</kbd> to <kbd>30%</kbd>, and the <kbd>left</kbd> to <kbd>59%</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 40</div>
+                Use an id selector to create a rule for the element with the id <kbd>black-hat</kbd>. Give it a
+                <kbd>width</kbd> of <kbd>0</kbd>, a <kbd>height</kbd> of <kbd>0</kbd>, and a <kbd>border-style</kbd> of
+                <kbd>solid</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 41</div>
+                Set the <kbd>border-width</kbd> of the <kbd>#black-hat</kbd> to <kbd>150px 0 0 300px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 42</div>
+                Just like with your <kbd>#white-hat</kbd>, you should style the border for the <kbd>#black-hat</kbd>
+                element. Give it a <kbd>border-top-color</kbd>, <kbd>border-right-color</kbd>, and
+                <kbd>border-bottom-color</kbd> of <kbd>transparent</kbd>. Set the <kbd>border-left-color</kbd> to
+                <kbd>rgb(45, 31, 19)</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 43</div>
+                Now position the <kbd>#black-hat</kbd> element. Give it a <kbd>position</kbd> of <kbd>absolute</kbd>,
+                with a <kbd>top</kbd> of <kbd>-150px</kbd> and a <kbd>left</kbd> of <kbd>0</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 44</div>
+                Using an id selector, style the element with the id <kbd>gray-mask</kbd>. Give it a <kbd>width</kbd> of
+                <kbd>150px</kbd>, a <kbd>height</kbd> of <kbd>150px</kbd>, and a <kbd>background-color</kbd> of
+                <kbd>rgb(167, 162, 117)</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 45</div>
+                Position the <kbd>#gray-mask</kbd> element by setting <kbd>position</kbd> to <kbd>absolute</kbd>, the
+                <kbd>top</kbd> to <kbd>-10px</kbd>, and the <kbd>left</kbd> to <kbd>70px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 46</div>
+                Using an id selector, create a rule for the id <kbd>white-paper</kbd>. Set the <kbd>width</kbd> to
+                <kbd>400px</kbd>, the <kbd>height</kbd> to <kbd>100px</kbd>, and the <kbd>background-color</kbd> to
+                <kbd>GhostWhite</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 47</div>
+                Give the <kbd>#white-paper</kbd> a <kbd>position</kbd> of <kbd>absolute</kbd>, a <kbd>top</kbd> of
+                <kbd>250px</kbd>, and a <kbd>left</kbd> of <kbd>-150px</kbd> to move it into place.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 48</div>
+                Set the <kbd>z-index</kbd> of the <kbd>#white-paper</kbd> element to <kbd>1</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 49</div>
+                FontAwesome icons come with their own styling to define the icon. However, you can still set the styling
+                yourself as well, to change things like the color and size. For now, use a class selector to target the
+                icons with the class <kbd>fa-music</kbd>. Set the <kbd>display</kbd> to <kbd>inline-block</kbd>, the
+                <kbd>margin-top</kbd> to <kbd>8%</kbd>, and the <kbd>margin-left</kbd> to <kbd>13%</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 51</div>
+                Use a class selector to target the new elements with the class <kbd>blue</kbd>. Set the
+                <kbd>background-color</kbd> to <kbd>#1E90FF</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 52</div>
+                Select the element with the id <kbd>blue-left</kbd> using an id selector. Give it a <kbd>width</kbd> of
+                <kbd>500px</kbd> and a <kbd>height</kbd> of <kbd>300px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 53</div>
+                Now set the <kbd>position</kbd> to <kbd>absolute</kbd>, the <kbd>top</kbd> to <kbd>20%</kbd>, and the
+                <kbd>left</kbd> to <kbd>20%</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 54</div>
+                Next, target the element with the id <kbd>blue-right</kbd> using an id selector. Set the
+                <kbd>width</kbd> to <kbd>400px</kbd> and the <kbd>height</kbd> to <kbd>300px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 55</div>
+                Give the <kbd>#blue-right</kbd> element the correct positioning with <kbd>position</kbd> set to
+                <kbd>absolute</kbd>, <kbd>top</kbd> set to <kbd>50%</kbd>, and <kbd>left</kbd> set to <kbd>40%</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 62</div>
+                Select your <kbd>orange-character</kbd> element with an id selector. Give it a <kbd>width</kbd> of
+                <kbd>250px</kbd>, a <kbd>height</kbd> of <kbd>550px</kbd>, and a <kbd>background-color</kbd> of
+                <kbd>rgb(240, 78, 42)</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 63</div>
+                Give the <kbd>#orange-character</kbd> element a <kbd>position</kbd> of <kbd>absolute</kbd>, a
+                <kbd>top</kbd> of <kbd>25%</kbd>, and a <kbd>left</kbd> of <kbd>40%</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 64</div>
+                Style the element with the id <kbd>black-round-hat</kbd> using an id selector. Set the <kbd>width</kbd>
+                to <kbd>180px</kbd>, the <kbd>height</kbd> to <kbd>150px</kbd>, and the <kbd>background-color</kbd> to
+                <kbd>rgb(45, 31, 19)</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 65</div>
+                The <kbd>#black-round-hat</kbd> element should probably be round. Give it a <kbd>border-radius</kbd> of
+                <kbd>50%</kbd> to fix this.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 66</div>
+                Move the <kbd>#black-round-hat</kbd> element into place with a <kbd>position</kbd> of
+                <kbd>absolute</kbd>, a <kbd>top</kbd> of <kbd>-100px</kbd>, and a <kbd>left</kbd> of <kbd>5px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 67</div>
+                Put the <kbd>#black-round-hat</kbd> element on the correct layer with a <kbd>z-index</kbd> of
+                <kbd>-1</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 68</div>
+                Use an id selector to create a rule for the element with the id <kbd>eyes-div</kbd>. Set the
+                <kbd>width</kbd> to <kbd>180px</kbd> and the <kbd>height</kbd> to <kbd>50px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 69</div>
+                Now move the <kbd>#eyes-div</kbd> element into position with <kbd>position</kbd> set to
+                <kbd>absolute</kbd>, <kbd>top</kbd> set to <kbd>-40px</kbd>, and <kbd>left</kbd> set to <kbd>20px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 70</div>
+                Give the <kbd>#eyes-div</kbd> element a <kbd>z-index</kbd> of <kbd>3</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 71</div>
+                Target the element with the id <kbd>triangles</kbd> using an id selector. Set the <kbd>width</kbd> to
+                <kbd>250px</kbd> and the <kbd>height</kbd> to <kbd>550px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 72</div>
+                Create a class selector for the elements with the <kbd>triangle</kbd> class. Set the <kbd>width</kbd> to
+                <kbd>0</kbd> and the <kbd>height</kbd> to <kbd>0</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 73</div>
+                Style the border of your <kbd>.triangle</kbd> elements. Set the <kbd>border-style</kbd> to
+                <kbd>solid</kbd> and the <kbd>border-width</kbd> to <kbd>42px 45px 45px 0</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 74</div>
+                Give your <kbd>.triangle</kbd> elements the correct color. Set the <kbd>border-top-color</kbd>,
+                <kbd>border-bottom-color</kbd>, and <kbd>border-left-color</kbd> to <kbd>transparent</kbd>. Set the
+                <kbd>border-right-color</kbd> to <kbd>Gold</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 75</div>
+                Adjust the layout of the <kbd>.triangle</kbd> elements with a <kbd>display</kbd> of
+                <kbd>inline-block</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 76</div>
+                Now use an id selector for <kbd>guitar</kbd>. Set the <kbd>width</kbd> to <kbd>100%</kbd>, and the
+                <kbd>height</kbd> to <kbd>100px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 77</div>
+                In the same <kbd>#guitar</kbd> selector, set the <kbd>position</kbd> to <kbd>absolute</kbd>, the
+                <kbd>top</kbd> to <kbd>120px</kbd>, and the <kbd>left</kbd> to <kbd>0px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 78</div>
+                Give the <kbd>#guitar</kbd> rule a <kbd>z-index</kbd> of <kbd>3</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 79</div>
+                Now use a class selector to target <kbd>guitar</kbd>. This will style the two "halves" of your guitar.
+                Set the <kbd>width</kbd> to <kbd>150px</kbd>, the <kbd>height</kbd> to <kbd>120px</kbd>, the
+                <kbd>background-color</kbd> to <kbd>Goldenrod</kbd>, and the <kbd>border-radius</kbd> to <kbd>50%</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 80</div>
+                Select the <kbd>id</kbd> with value <kbd>guitar-left</kbd>, and set the <kbd>position</kbd> to
+                <kbd>absolute</kbd> and the <kbd>left</kbd> to <kbd>0px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 81</div>
+                Select the id with value <kbd>guitar-right</kbd>, and also set <kbd>position</kbd> to
+                <kbd>absolute</kbd>. This time, set <kbd>left</kbd> to <kbd>100px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 82</div>
+                Now you need to move the bar icons into place. Create a class selector for the <kbd>fa-bars</kbd> class.
+                Set the <kbd>display</kbd> to <kbd>block</kbd>, the <kbd>margin-top</kbd> to <kbd>30%</kbd>, and the
+                <kbd>margin-left</kbd> to <kbd>40%</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 83</div>
+                Use an id selector to create a rule for the id <kbd>guitar-neck</kbd>. Set the <kbd>width</kbd> to
+                <kbd>200px</kbd>, the <kbd>height</kbd> to <kbd>30px</kbd>, and the <kbd>background-color</kbd> to
+                <kbd>#D2691E</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 84</div>
+                Now move the <kbd>#guitar-neck</kbd> element with a <kbd>position</kbd> of <kbd>absolute</kbd>, a
+                <kbd>top</kbd> value of <kbd>45px</kbd>, and a <kbd>left</kbd> value of <kbd>200px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 85</div>
+                Give the <kbd>#guitar-neck</kbd> element a <kbd>z-index</kbd> of <kbd>3</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 86</div>
+                Time to style the elements with the <kbd>eyes</kbd> class. Use a class selector to set the
+                <kbd>width</kbd> to <kbd>35px</kbd>, the <kbd>height</kbd> to <kbd>20px</kbd>, the
+                <kbd>background-color</kbd> to <kbd>#8B4513</kbd>, and the <kbd>border-radius</kbd> to <kbd>20px
+                    50%</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 87</div>
+                Target the <kbd>class</kbd> with value <kbd>right</kbd> and set the <kbd>position</kbd> to
+                <kbd>absolute</kbd>, <kbd>top</kbd> to <kbd>15px</kbd>, and <kbd>right</kbd> to <kbd>30px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 88</div>
+                For the <kbd>class</kbd> with value <kbd>left</kbd>, create the selector and set the <kbd>position</kbd>
+                to <kbd>absolute</kbd>, the <kbd>top</kbd> to <kbd>15px</kbd>, and the <kbd>left</kbd> to
+                <kbd>30px</kbd>.
+            </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div class="ms-2 me-auto">
+                <div class="fw-bold">Step 89</div>
+                <p>One last step. The FontAwesome icons are a little too small. Target all of them with a
+                    <kbd>class</kbd> selector for <kbd>fas</kbd>, and set the <kbd>font-size</kbd> to <kbd>30px</kbd>.
+                </p>
+
+                <p>With that, your Picasso painting is complete!</p>
+            </div>
+        </li>
+    </ol>
+    <hr class="border-5">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+        integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

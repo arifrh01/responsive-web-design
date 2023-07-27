@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="stepHTML.html">Responsive Web Design by Building a Piano</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Step by Step</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="stepHTML.html">HTML</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="stepCSS.html">CSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h3 class="text-center">Step by Step CSS</h3>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 9</div>
+                    <p>Browsers can apply default margin and padding values to specific elements. To make sure your
+                        piano looks correct, you need to reset the box model.</p>
+
+                    <p>Add an <kbd>html</kbd> rule selector to your CSS file, and set the <kbd>box-sizing</kbd> property
+                        to <kbd>border-box</kbd>.</p>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 10</div>
+                    <p>Now that you have reset the <kbd>html</kbd> box model, you need to pass that on to the elements
+                        within as well. To do this, you can set the <kbd>box-sizing</kbd> property to
+                        <kbd>inherit</kbd>, which will tell the targeted elements to use the same value as the parent
+                        element.</p>
+                    <p>You will also need to target the pseudo-elements, which are special keywords that follow a
+                        selector. The two pseudo-elements you will be using are the <kbd>::before</kbd> and
+                        <kbd>::after</kbd> pseudo-elements.</p>
+                    <p>The <kbd>::before</kbd> selector creates a pseudo-element which is the first child of the
+                        selected element, while the <kbd>::after</kbd> selector creates a pseudo-element which is the
+                        last child of the selected element. These pseudo-elements are often used to create cosmetic
+                        content, which you will see later in this project.</p>
+                    <p>For now, create a CSS selector to target all elements with <kbd>*</kbd>, and include the
+                        pseudo-elements with <kbd>::before</kbd> and <kbd>::after</kbd>. Set the <kbd>box-sizing</kbd>
+                        property to <kbd>inherit</kbd>.</p>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 11</div>
+                    Now target your <kbd>#piano</kbd> element with an <kbd>id</kbd> selector. Set
+                    <kbd>background-color</kbd> property to <kbd>#00471b</kbd>, the <kbd>width</kbd> property to
+                    <kbd>992px</kbd> and the <kbd>height</kbd> property to <kbd>290px</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 12</div>
+                    Set the <kbd>margin</kbd> of the <kbd>#piano</kbd> to <kbd>80px auto</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 13</div>
+                    Time to style the keys. Below the <kbd>#piano</kbd> rule, target the <kbd>.keys</kbd> element with a
+                    <kbd>class</kbd> selector. Give the new rule a <kbd>background-color</kbd> property of
+                    <kbd>#040404</kbd>, a <kbd>width</kbd> property of <kbd>949px</kbd> and a <kbd>height</kbd> property
+                    of <kbd>180px</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 14</div>
+                    Give the <kbd>.keys</kbd> a <kbd>padding-left</kbd> of <kbd>2px</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 15</div>
+                    Move the keys into position by adjusting the <kbd>#piano</kbd> selector. Set the <kbd>padding</kbd>
+                    property to <kbd>90px 20px 0 20px</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 16</div>
+                    Time to style the keys themselves. Create a <kbd>class</kbd> selector for the <kbd>.key</kbd>
+                    elements. Set the <kbd>background-color</kbd> set to the value <kbd>#ffffff</kbd>, the
+                    <kbd>position</kbd> property to <kbd>relative</kbd>, the <kbd>width</kbd> property to
+                    <kbd>41px</kbd>, and the <kbd>height</kbd> property to <kbd>175px</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 17</div>
+                    Give the <kbd>.key</kbd> a <kbd>margin</kbd> of <kbd>2px</kbd> and a <kbd>float</kbd> property set
+                    to <kbd>left</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 18</div>
+                    <p>Now it is time to use the pseudo-selectors you prepared for earlier. To create the black keys,
+                        add a new <kbd>.key.black--key::after</kbd> selector. This will target the elements with the
+                        class <kbd>key black--key</kbd>, and select the pseudo-element after these elements in the HTML.
+                    </p>
+                    <p>In the new selector, set the <kbd>background-color</kbd> to <kbd>#1d1e22</kbd>. Also set the
+                        <kbd>content</kbd> property to <kbd>""</kbd>. This will make the pseudo-elements empty.</p>
+                    <p>The <kbd>content</kbd> property is used to set or override the content of the element. By
+                        default, the pseudo-elements created by the <kbd>::before</kbd> and <kbd>::after</kbd>
+                        pseudo-selectors are empty, and the elements will not be rendered to the page. Setting the
+                        <kbd>content</kbd> property to an empty string <kbd>""</kbd> will ensure the element is rendered
+                        to the page while still being empty.</p>
+                    <p>If you would like to experiment, try removing the <kbd>background-color</kbd> property and
+                        setting different values for the <kbd>content</kbd> property, such as <kbd>"♥"</kbd>. Remember
+                        to undo these changes when you are done so the tests pass.</p>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 19</div>
+                    Give the <kbd>.key.black--key::after</kbd> a <kbd>position</kbd> property set to <kbd>absolute</kbd>
+                    and a <kbd>left</kbd> property set to <kbd>-18px</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 20</div>
+                    For the <kbd>.key.black--key::after</kbd>, set the <kbd>width</kbd> to <kbd>32px</kbd> and the
+                    <kbd>height</kbd> to <kbd>100px</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 22</div>
+                    Start styling the logo by creating a <kbd>.logo</kbd> selector. Set the <kbd>width</kbd> to
+                    <kbd>200px</kbd>, a <kbd>position</kbd> of <kbd>absolute</kbd> and a <kbd>top</kbd> set to
+                    <kbd>23px</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 23</div>
+                    The <kbd>img</kbd> element needs its parent to have a <kbd>position</kbd> set as a point of
+                    reference. Set the <kbd>position</kbd> of the <kbd>#piano</kbd> selector to <kbd>relative</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 24</div>
+                    To smooth the sharp edges of the piano and keys, start by giving the <kbd>#piano</kbd> a
+                    <kbd>border-radius</kbd> of <kbd>10px</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 25</div>
+                    Give the <kbd>.key</kbd> selector a <kbd>border-radius</kbd> value of <kbd>0 0 3px 3px</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 26</div>
+                    Give the <kbd>.key.black--key::after</kbd> selector a <kbd>border-radius</kbd> of <kbd>0 0 3px
+                        3px</kbd> to match the keys.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 27</div>
+                    <p>The <kbd>@media</kbd> at-rule, also known as a media query, is used to conditionally apply CSS.
+                        Media queries are commonly used to apply CSS based on the viewport width using the
+                        <kbd>max-width</kbd> and <kbd>min-width</kbd> properties.</p>
+                    <p>In the below example the padding is applied to the <kbd>.card</kbd> class when the viewport is
+                        <kbd>960px</kbd> wide and below.</p>
+                    <p><kbd>@media (max-width: 960px) {
+                            .card {
+                            padding: 2rem;
+                            }
+                            }</kbd></p>
+                    <p>Add a media query that will be applied when the viewport is <kbd>768px</kbd> wide and below.</p>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 28</div>
+                    Add a new <kbd>#piano</kbd> selector within your <kbd>@media</kbd> query, and set the
+                    <kbd>width</kbd> to <kbd>358px</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 29</div>
+                    Within the <kbd>@media</kbd> query, add a <kbd>.keys</kbd> selector and set the <kbd>width</kbd> to
+                    <kbd>318px</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 30</div>
+                    Now add a <kbd>.logo</kbd> selector to the <kbd>@media</kbd> query, and set the <kbd>width</kbd>
+                    property to <kbd>150px</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 31</div>
+                    You might have noticed the keys collapse when the browser window is smaller than <kbd>768px</kbd>.
+                    Set <kbd>overflow</kbd> to <kbd>hidden</kbd> in the first <kbd>.keys</kbd> selector, to take care of
+                    this issue. This property will hide any element that is pushed outside the set <kbd>width</kbd>
+                    value of <kbd>.keys</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 32</div>
+                    <p>Logical operators can be used to construct more complex media queries. The <kbd>and</kbd> logical
+                        operator is used to query two media conditions.</p>
+                    <p>For example, a media query that targets a display width between 500px and 1000px would be:</p>
+                    <p>@media (min-width: 500px) and (max-width: 1000px){}</p>
+                    <p>Add another <kbd>@media</kbd> rule to apply if the browser window is wider than <kbd>769px</kbd>
+                        but smaller than <kbd>1199px</kbd>.</p>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 33</div>
+                    <p>For the new <kbd>@media</kbd> rule, set the <kbd>width</kbd> of the <kbd>#piano</kbd> to
+                        <kbd>675px</kbd> and the <kbd>width</kbd> of the <kbd>.keys</kbd> to <kbd>633px</kbd>.</p>
+                    <p>With that, your piano is complete!</p>
+                </div>
+            </li>
+        </ol>
+    </main>
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous">
+        </script>
+    </footer>
+
+
+</body>
+
+</html>

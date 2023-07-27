@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="stepHTML.html">Responsive Web Design by Building a Piano</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Step by Step</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="stepHTML.html">HTML</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="stepCSS.html">CSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h3 class="text-center">Step by Step HTML</h3>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 1</div>
+                    <p>Begin with the basic HTML structure. Add a <kbd>DOCTYPE</kbd> declaration and <kbd>html</kbd>,
+                        <kbd>head</kbd>, <kbd>body</kbd>, and <kbd>title</kbd> elements.</p>
+                    <p>Set the language of this page to English. Set the <kbd>title</kbd> to <kbd>Piano</kbd>.</p>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 2</div>
+                    Add two <kbd>meta</kbd> tags, one to optimize your page for mobile devices, and one to specify an
+                    accepted <kbd>charset</kbd> for the page.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 3</div>
+                    Time to start working on the piano. Create a <kbd>div</kbd> element within your <kbd>body</kbd>
+                    element
+                    with the <kbd>id</kbd> set to <kbd>piano</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 4</div>
+                    Nest a second <kbd>div</kbd> within your existing <kbd>div</kbd>, and set the class to be
+                    <kbd>keys</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 5</div>
+                    Within your <kbd>.keys</kbd> element, add seven <kbd>div</kbd> elements. Give them all the class
+                    <kbd>key</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 6</div>
+                    Remember that a <kbd>class</kbd> attribute can have multiple values. To separate your white keys
+                    from
+                    your black keys, you'll add a second <kbd>class</kbd> value of <kbd>black--key</kbd>. Add this to
+                    your
+                    second, third, fifth, sixth, and seventh <kbd>.key</kbd> elements.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 7</div>
+                    Now copy the set of seven <kbd>.key</kbd> elements, and paste two more sets into the
+                    <kbd>.keys</kbd>
+                    div.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 8</div>
+                    Add a <kbd>link</kbd> element within your <kbd>head</kbd> element. For that <kbd>link</kbd> element,
+                    set
+                    the <kbd>rel</kbd> attribute to <kbd>stylesheet</kbd> and the <kbd>href</kbd> to
+                    <kbd>./styles.css</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 21</div>
+                    <p>The piano needs the freeCodeCamp logo to make it official.</p>
+                    <p>Add an <kbd>img</kbd> element before your <kbd>.keys</kbd> element. Give the <kbd>img</kbd> a
+                        <kbd>class</kbd> of <kbd>logo</kbd>, and set the <kbd>src</kbd> to
+                        <kbd>https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg</kbd>. Give it an
+                        <kbd>alt</kbd> text of <kbd>freeCodeCamp Logo</kbd>.</p>
+                </div>
+            </li>
+        </ol>
+    </main>
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous">
+        </script>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Step CSS Building a City Skyline</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="stepHTML.html">Building a City Skyline</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Step by Step</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link" href="stepHTML.html">HTML</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="stepCSS.html">CSS</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h3 class="text-center">Step by Step CSS</h3>
+        <ol class="list-group list-group-numbered">
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 5</div>
+                    In CSS, you can target everything with an asterisk. Add a border to everything by using the
+                    <kbd>*</kbd> selector, and giving it a <kbd>border</kbd> of <kbd>1px solid black</kbd>. This is a
+                    trick that helps visualize where elements are and their size. You will remove this later.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 6</div>
+                    Also add a <kbd>box-sizing</kbd> of <kbd>border-box</kbd> to everything. This will make it so the
+                    border you added doesn't add any size to your elements.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 7</div>
+                    You can see the <kbd>body</kbd> (it's the inner-most box on your page); the box around it is the
+                    <kbd>html</kbd> element. Make your <kbd>body</kbd> fill the whole viewport by giving it a
+                    <kbd>height</kbd> of <kbd>100vh</kbd>. Remove the default <kbd>margin</kbd> from the <kbd>body</kbd>
+                    by setting the <kbd>margin</kbd> to <kbd>0</kbd>. Finally, set the <kbd>overflow</kbd> property to
+                    <kbd>hidden</kbd> to hide any scroll bars that appear when something extends past the viewport.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 9</div>
+                    Give your <kbd>.background-buildings</kbd> element a <kbd>width</kbd> and <kbd>height</kbd> of
+                    <kbd>100%</kbd> to make it the full width and height of its parent, the <kbd>body</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 12</div>
+                    Give the parts of your building <kbd>width</kbd> and <kbd>height</kbd> properties with these values:
+                    <kbd>70%</kbd> and <kbd>10%</kbd> to <kbd>.bb1a</kbd>, <kbd>80%</kbd> and <kbd>10%</kbd> to
+                    <kbd>.bb1b</kbd>, <kbd>90%</kbd> and <kbd>10%</kbd> to <kbd>.bb1c</kbd>, and <kbd>100%</kbd> and
+                    <kbd>70%</kbd> to <kbd>.bb1d</kbd>. Remember that these percentages are relative to the parent and
+                    note that the heights will add up to 100% - vertically filling the container.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 13</div>
+                    Center the parts of your building by turning the .bb1 element into a flexbox parent. Use the
+                    <kbd>flex-direction</kbd> and <kbd>align-items</kbd> properties to center the children.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 14</div>
+                    Now you have something that is resembling a building. You are ready to create your first variable.
+                    Variable declarations begin with two dashes <kbd>(-)</kbd> and are given a name and a value like
+                    this: <kbd>--variable-name: value;</kbd>. In the rule for the <kbd>bb1</kbd> class, create a
+                    variable named <kbd>--building-color1</kbd> and give it a value of <kbd>#999</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 15</div>
+                    <p>To use a variable, put the variable name in parentheses with <kbd>var</kbd> in front of them like
+                        this: <kbd>var(--variable-name)</kbd>. Whatever value you gave the variable will be applied to
+                        whatever property you use it on.</p>
+                    <p>Add the variable <kbd>--building-color1</kbd> you created in the previous step as the value
+                        of the <kbd>background-color</kbd> property of the <kbd>.bb1a</kbd> class.</p>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 16</div>
+                    Use the same variable as the <kbd>background-color</kbd> of the <kbd>.bb1b</kbd>, <kbd>.bb1c</kbd>,
+                    and <kbd>.bb1d</kbd> classes to fill in the rest of the building.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 17</div>
+                    Change the value of your variable from <kbd>#999</kbd> to <kbd>#aa80ff</kbd> and you can see how it
+                    gets applied everywhere you used the variable. This is the main advantage of using variables, being
+                    able to quickly change many values in your stylesheet by just changing the value of a variable.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 19</div>
+                    Give the new buildings <kbd>width</kbd> and <kbd>height</kbd> properties of: <kbd>10%</kbd> and
+                    <kbd>50%</kbd> for <kbd>.bb2</kbd>, <kbd>10%</kbd> and <kbd>55%</kbd> for <kbd>.bb3</kbd>, and
+                    <kbd>11%</kbd> and <kbd>58%</kbd> for <kbd>.bb4</kbd>. You will be using almost all percent based
+                    units and some flexbox for this project, so everything will be completely responsive.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 20</div>
+                    The buildings are currently stacked on top of each other. Align the buildings by turning the
+                    <kbd>.background-buildings</kbd> element into a flexbox parent. Use the <kbd>align-items</kbd> and
+                    <kbd>justify-content</kbd> properties to evenly space the buildings across the bottom of the
+                    element.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 21</div>
+                    The buildings are too spaced out. Squeeze them together by adding two empty <kbd>div</kbd> elements
+                    to the top of the <kbd>.background-buildings</kbd> element, two more at the bottom of it, and one
+                    more in between <kbd>.bb3</kbd> and <kbd>.bb4</kbd>. These will be added as evenly-spaced elements
+                    across the container, effectively moving the buildings closer to the center.
+                    element.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 22</div>
+                    Create a new variable below your <kbd>--building-color1</kbd> variable. Name your new variable
+                    <kbd>--building-color2</kbd> and give it a value of <kbd>#66cc99</kbd>. Then set it as the
+                    <kbd>background-color</kbd> of <kbd>.bb2</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 23</div>
+                    That didn't work. You should add a fallback value to a variable by putting it as the second value of
+                    where you use the variable like this: <kbd>var(--variable-name, fallback-value)</kbd>. The property
+                    will use the fallback value when there's a problem with the variable. Add a fallback value of
+                    <kbd>green</kbd> to the <kbd>background-color</kbd> of <kbd>.bb2</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 24</div>
+                    Create a new variable below the other ones named <kbd>--building-color3</kbd> and give it a value of
+                    <kbd>#cc6699</kbd>. Then use it as the <kbd>background-color</kbd> of the <kbd>.bb3</kbd> class and
+                    give it a fallback value of <kbd>pink</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 25</div>
+                    That didn't work, because the variables you declared in <kbd>.bb1</kbd> do not cascade to the
+                    <kbd>.bb2</kbd> and <kbd>.bb3</kbd> sibling elements. That's just how CSS works. Because of this,
+                    variables are often declared in the <kbd>:root</kbd> selector. This is the highest level selector in
+                    CSS; putting your variables there will make them usable everywhere. Add the <kbd>:root</kbd>
+                    selector to the top of your stylesheet, and move all your variable declarations there.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 26</div>
+                    Now that you've worked the bugs out and the buildings are the right colors, you can remove the
+                    fallback values in the two places they were used. Go ahead and do that now.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 27</div>
+                    Create another variable named <kbd>--building-color4</kbd> and give it a value of
+                    <kbd>#538cc6</kbd>. Make sure it's in the <kbd>:root</kbd> selector this time. Then use it to fill
+                    in the last building.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 31</div>
+                    Give the six new elements these <kbd>width</kbd> and <kbd>height</kbd> values: <kbd>10%</kbd> and
+                    <kbd>60%</kbd> to <kbd>.fb1</kbd>, <kbd>10%</kbd> and <kbd>40%</kbd> to <kbd>.fb2</kbd>,
+                    <kbd>10%</kbd> and <kbd>35%</kbd> to <kbd>.fb3</kbd>, <kbd>8%</kbd> and <kbd>45%</kbd> to
+                    <kbd>.fb4</kbd>, <kbd>10%</kbd> and <kbd>33%</kbd> to <kbd>.fb5</kbd>, and <kbd>9%</kbd> and
+                    <kbd>38%</kbd> to <kbd>.fb6</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 32</div>
+                    Add the same <kbd>display</kbd>, <kbd>align-items</kbd>, and <kbd>justify-content</kbd> properties
+                    and values to <kbd>.foreground-buildings</kbd> that you used on <kbd>.background-buildings</kbd>.
+                    Again, this will use Flexbox to evenly space the buildings across the bottom of their container.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 33</div>
+                    You should optimize your code. Move the <kbd>position</kbd> and <kbd>top</kbd> properties and values
+                    from <kbd>.foreground-buildings</kbd> to <kbd>.background-buildings</kbd>. Then select both
+                    <kbd>.background-buildings</kbd> and <kbd>.foreground-buildings</kbd> there, effectively applying
+                    those styles to both of the elements. You can use a comma (<kbd>,</kbd>) to separate selectors like
+                    this: <kbd>selector1, selector2</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 34</div>
+                    Now that you did that, you can delete the old <kbd>.foreground-buildings</kbd> declaration and all
+                    of its properties since they aren't needed anymore.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 35</div>
+                    The skyline is coming together. Fill in the <kbd>background-color</kbd> property of the foreground
+                    buildings. Use your <kbd>--building-color1</kbd> variable to fill in <kbd>.fb3</kbd> and
+                    <kbd>.fb4</kbd>, <kbd>--building-color2</kbd> for <kbd>.fb5</kbd>, <kbd>--building-color3</kbd> for
+                    <kbd>.fb2</kbd> and <kbd>.fb6</kbd>, and <kbd>--building-color4</kbd> for <kbd>.fb1</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 37</div>
+                    Move the position of <kbd>.fb4</kbd> relative to where it is now by adding a <kbd>position</kbd> of
+                    <kbd>relative</kbd> and <kbd>left</kbd> of <kbd>10%</kbd> to it. Do the same for <kbd>.fb5</kbd> but
+                    use <kbd>right</kbd> instead of <kbd>left</kbd>. This will cover up the remaining white space in
+                    between the buildings.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 38</div>
+                    Your code is starting to get quite long. Add a comment above the <kbd>.fb1</kbd> class that says
+                    <kbd>FOREGROUND BUILDINGS - "fb" stands for "foreground building"</kbd> to help people understand
+                    your code. Above the <kbd>.bb1</kbd> class add another comment that says <kbd>BACKGROUND BUILDINGS -
+                        "bb" stands for "background building"</kbd>. If you don't remember, comments in CSS look like
+                    this: <kbd>/* Comment here */</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 39</div>
+                    Create a new variable in <kbd>:root</kbd> called <kbd>--window-color1</kbd> and give it a value of
+                    <kbd>black</kbd>. This will be a secondary color for the purple buildings.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 40</div>
+                    In <kbd>.bb1a</kbd>, add a <kbd>background property</kbd> below the <kbd>background-color</kbd>
+                    property. Set it as a gradient of type <kbd>linear-gradient</kbd> that uses
+                    <kbd>--building-color1</kbd> as the first color and <kbd>--window-color1</kbd> as the second.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 41</div>
+                    You want to add the same gradient to the next two sections. Instead of doing that, create a new
+                    class selector called <kbd>bb1-window</kbd>, and move the <kbd>height</kbd> and
+                    <kbd>background</kbd> properties and values from <kbd>.bb1a</kbd> to the new class selector.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 43</div>
+                    You don't need the <kbd>height</kbd> or <kbd>background-color</kbd> properties in <kbd>.bb1a</kbd>,
+                    <kbd>.bb1b</kbd> or <kbd>.bb1c</kbd> anymore, so go ahead and remove them.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 44</div>
+                    Add a <kbd>linear-gradient</kbd> to <kbd>.bb1d</kbd> with <kbd>orange</kbd> as the first color,
+                    <kbd>--building-color1</kbd> as the second, and <kbd>--window-color1</kbd> as the third. Remember to
+                    use the gradient on the <kbd>background</kbd> property.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 45</div>
+                    It's a little hidden behind the foreground buildings, but you can see the three color gradient
+                    there. Since you are using that now, remove the <kbd>background-color</kbd> property from
+                    <kbd>.bb1d</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 46</div>
+                    Here, it will transition from <kbd>color1</kbd> to <kbd>color2</kbd> between <kbd>0%</kbd> and
+                    <kbd>20%</kbd> of the element and then transition to <kbd>color3</kbd> for the rest. Add
+                    <kbd>80%</kbd> to the <kbd>--building-color1</kbd> color of the <kbd>.bb1d</kbd> gradient so you can
+                    see it in action.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 47</div>
+                    Remove <kbd>orange</kbd> from the <kbd>.bb1d</kbd> gradient and change the <kbd>80%</kbd> to
+                    <kbd>50%</kbd>. This will make <kbd>--building-color1</kbd> solid for the top half, and then
+                    transition to <kbd>--window-color1</kbd> for the bottom half.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 49</div>
+                    Give <kbd>.bb2b</kbd> a <kbd>width</kbd> and <kbd>height</kbd> of <kbd>100%</kbd> to make it fill
+                    the building container. You will add something on the top a little later.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 50</div>
+                    Create a new variable in :root named <kbd>window-color2</kbd> with a value of <kbd>#8cd9b3</kbd>.
+                    This will be used as the secondary color for this building.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 51</div>
+                    Add a <kbd>linear-gradient</kbd> to <kbd>.bb2b</kbd> that uses <kbd>--building-color2</kbd> from
+                    <kbd>0%</kbd> to <kbd>6%</kbd> and <kbd>--window-color2</kbd> from <kbd>6%</kbd> to <kbd>9%</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 52</div>
+                    You can see the hard color change at the top of the section. Change the gradient type from
+                    <kbd>linear-gradient</kbd> to <kbd>repeating-linear-gradient</kbd> for this section. This will make
+                    the four colors of your gradient repeat until it gets to the bottom of the element; giving you some
+                    stripes, and saving you from having to add a bunch of elements to create them.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 53</div>
+                    In the next few steps, you are going to use some tricks with CSS borders to turn the
+                    <kbd>.bb2a</kbd> section into a triangle at the top of the building. First, remove the
+                    <kbd>background-color</kbd> from <kbd>.bb2</kbd> since you don't need it anymore.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 54</div>
+                    <p>Create and add the following properties to <kbd>.bb2a</kbd>:</p>
+                    <code>
+                        margin: auto;
+                        width: 5vw;
+                        height: 5vw;
+                        border-top: 1vw solid #000;
+                        border-bottom: 1vw solid #000;
+                        border-left: 1vw solid #999;
+                        border-right: 1vw solid #999;
+                    </code>
+                    <p>After you add these, you can see how a thick border on an element gives you some angles where two
+                        sides meet. You are going to use that bottom border as the top of the building.</p>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 55</div>
+                    Next, remove the <kbd>width</kbd> and <kbd>height</kbd> from <kbd>.bb2a</kbd>, and change the
+                    <kbd>border-left</kbd> and <kbd>border-right</kbd> to use <kbd>5vw</kbd> instead of <kbd>1vw</kbd>.
+                    The element will now have zero size and the borders will come together in the middle.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 56</div>
+                    Next, change the two <kbd>#999</kbd> of <kbd>.bb2a</kbd> to <kbd>transparent</kbd>. This will make
+                    the left and right borders invisible.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 57</div>
+                    Remove the <kbd>margin</kbd> and <kbd>border-top</kbd> properties and values from <kbd>.bb2a</kbd>
+                    to turn it into a triangle for the top of the building.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 58</div>
+                    Finally, on the <kbd>border-bottom</kbd> property of <kbd>.bb2a</kbd>, change the <kbd>1vw</kbd> to
+                    <kbd>5vh</kbd> and change the <kbd>#000</kbd> color to your <kbd>--building-color2</kbd> variable.
+                    There you go, now it looks good! At any time throughout this project, you can comment out or remove
+                    the <kbd>border</kbd> property you added to everything at the beginning to see what the buildings
+                    will look like when that gets removed at the end.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 59</div>
+                    On to the next building! Create a new variable called <kbd>--window-color3</kbd> in <kbd>:root</kbd>
+                    and give it a value of <kbd>#d98cb3</kbd>. This will be the secondary color for the pink buildings.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 60</div>
+                    Fill in <kbd>.bb3</kbd> with a <kbd>repeating-linear-gradient</kbd>. Use <kbd>90deg</kbd> for the
+                    direction, your <kbd>building-color3</kbd> for the first two colors, and <kbd>window-color3</kbd> at
+                    <kbd>15%</kbd> for the third. When you don't specify a distance for a color, it will use the values
+                    that makes sense. In this case, the first two colors will default to <kbd>0%</kbd> and
+                    <kbd>7.5%</kbd> because it starts at <kbd>0%</kbd>, and <kbd>7.5%</kbd> is half of the
+                    <kbd>15%</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 61</div>
+                    Remove the <kbd>background-color</kbd> property and value from <kbd>.bb3</kbd> since you are using
+                    the gradient as the background now.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 63</div>
+                    Give the new div elements these <kbd>width</kbd> and <kbd>height</kbd> values: <kbd>3%</kbd> and
+                    <kbd>10%</kbd> to <kbd>.bb4a</kbd>, <kbd>80%</kbd> and <kbd>5%</kbd> to <kbd>.bb4b</kbd>, and
+                    <kbd>100%</kbd> and <kbd>85%</kbd> to <kbd>.bb4c</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 64</div>
+                    Remove the <kbd>background-color</kbd> property and value from <kbd>.bb4</kbd>, and add it to the
+                    three new sections <kbd>.bb4a</kbd>, <kbd>.bb4b</kbd>, and <kbd>.bb4c</kbd>, so only the sections
+                    are filled.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 65</div>
+                    You want <kbd>.bb4</kbd> to share the properties of <kbd>.bb1</kbd> that center the sections.
+                    Instead of duplicating that code, create a new class above the background building comment called
+                    <kbd>building-wrap</kbd>. Leave it empty for now; this class will be used in a few places to save
+                    you some coding.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 66</div>
+                    Move the <kbd>display</kbd>, <kbd>flex-direction</kbd>, and <kbd>align-items</kbd> properties and
+                    values from <kbd>.bb1</kbd> to the new <kbd>building-wrap</kbd> class.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 68</div>
+                    Create a new variable called <kbd>--window-color4</kbd> in <kbd>:root</kbd> and give it a value of
+                    <kbd>#8cb3d9</kbd>. This will be the secondary color for the last background building.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 70</div>
+                    Give the <kbd>bb4-window</kbd> class a <kbd>width</kbd> of <kbd>18%</kbd>, a <kbd>height</kbd> of
+                    <kbd>90%</kbd>, and add your <kbd>--window-color4</kbd> variable as the <kbd>background-color</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 71</div>
+                    The windows are stacked on top of each other at the left of the section, behind the purple building.
+                    Add a new class below <kbd>.building-wrap</kbd> called <kbd>window-wrap</kbd>. Make
+                    <kbd>.window-wrap</kbd> a flexbox container, and use the <kbd>align-items</kbd> and
+                    <kbd>justify-content</kbd> properties to center its child elements vertically and evenly space them
+                    in their parent, respectively.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 74</div>
+                    Give <kbd>.fb1b</kbd> a <kbd>width</kbd> of <kbd>60%</kbd> and <kbd>height</kbd> of <kbd>10%</kbd>,
+                    and <kbd>.fb1c</kbd> a <kbd>width</kbd> of <kbd>100%</kbd> and <kbd>height</kbd> of <kbd>80%</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 76</div>
+                    Move the <kbd>background-color</kbd> property and value from <kbd>.fb1</kbd> to <kbd>.fb1b</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 77</div>
+                    <p>Don't worry about the space at the bottom, everything will get moved down later when you add some
+                        height to the element at the top of the building.</p>
+                    <p>Add a <kbd>repeating-linear-gradient</kbd> to <kbd>.fb1c</kbd> with a <kbd>90deg</kbd> angle,
+                        your <kbd>--building-color4</kbd> from <kbd>0%</kbd> to <kbd>10%</kbd> and
+                        <kbd>transparent</kbd> from <kbd>10%</kbd> to <kbd>15%</kbd>.</p>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 78</div>
+                    Add a <kbd>repeating-linear-gradient</kbd> to <kbd>.fb1c</kbd> below the one that's there; use your
+                    <kbd>--building-color4</kbd> from <kbd>0%</kbd> to <kbd>10%</kbd> and <kbd>--window-color4</kbd>
+                    from <kbd>10%</kbd> and <kbd>90%</kbd>. This will fill in behind the gradient you added last.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 79</div>
+                    You're going to use some more border tricks for the top section. Add a <kbd>border-bottom</kbd> with
+                    a value of <kbd>7vh solid var(--building-color4)</kbd> to <kbd>.fb1a</kbd>. This will put a
+                    <kbd>7vh</kbd> height border on the bottom. But since the element has zero size, it only shows up as
+                    a 2px wide line from the 1px border that is on all the elements.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 80</div>
+                    When you increase the size of the left and right borders, the border on the bottom will expand to be
+                    the width of the combined left and right border widths. Add <kbd>2vw solid transparent</kbd> as the
+                    value of the <kbd>border-left</kbd> and <kbd>border-right</kbd> properties of <kbd>.fb1a</kbd>. They
+                    will be invisible, but it will make the border on the bottom <kbd>4vw</kbd> wide.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 82</div>
+                    Give <kbd>.fb2a</kbd> a <kbd>width</kbd> of <kbd>100%</kbd> and <kbd>.fb2b</kbd> a <kbd>width</kbd>
+                    of <kbd>100%</kbd> and <kbd>height</kbd> of <kbd>75%</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 85</div>
+                    Give the <kbd>.fb2-window</kbd> elements a <kbd>width</kbd> of <kbd>22%</kbd>, <kbd>height</kbd> of
+                    <kbd>100%</kbd>, and a <kbd>background-color</kbd> of your <kbd>--window-color3</kbd> variable.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 86</div>
+                    Move the <kbd>background-color</kbd> property and value from <kbd>.fb2</kbd> to <kbd>.fb2b</kbd> to
+                    just color the section and not the container.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 87</div>
+                    For <kbd>.fb2a</kbd>, add a <kbd>border-bottom</kbd> of <kbd>10vh solid
+                        var(--building-color3)</kbd>, and a <kbd>border-left</kbd> and <kbd>border-right</kbd> of
+                    <kbd>1vw solid transparent</kbd>. This time the border trick will create a trapezoid shape.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 89</div>
+                    Give the <kbd>.fb3a</kbd> element a <kbd>width</kbd> of <kbd>80%</kbd> and <kbd>height</kbd> of
+                    <kbd>15%</kbd>. Then give the <kbd>.fb3b</kbd> element a <kbd>width</kbd> of <kbd>100%</kbd> and
+                    <kbd>height</kbd> of <kbd>35%</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 90</div>
+                    Remove the <kbd>background-color</kbd> property and value from <kbd>.fb3</kbd>, and add them to
+                    <kbd>.fb3a</kbd> and <kbd>.fb3b</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 93</div>
+                    Give the <kbd>.fb3-window</kbd> elements a <kbd>width</kbd> of <kbd>25%</kbd>, a <kbd>height</kbd>
+                    of <kbd>80%</kbd>, and use your <kbd>--window-color1</kbd> variable as the
+                    <kbd>background-color</kbd> value.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 95</div>
+                    With CSS variables you can change values without searching everywhere in the stylesheet. Change the
+                    <kbd>--window-color1</kbd> value to <kbd>#bb99ff</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 97</div>
+                    Give <kbd>.fb4b</kbd> a <kbd>width</kbd> of <kbd>100%</kbd> and <kbd>height</kbd> of <kbd>89%</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 98</div>
+                    Add your <kbd>--building-color1</kbd> variable as value of the <kbd>background-color</kbd> property
+                    of <kbd>.fb4b</kbd>. Then, remove the <kbd>background-color</kbd> from <kbd>.fb4</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 100</div>
+                    Give the <kbd>.fb4-window</kbd> elements a <kbd>width</kbd> of <kbd>30%</kbd>, <kbd>height</kbd> of
+                    <kbd>10%</kbd>, and <kbd>border-radius</kbd> of <kbd>50%</kbd>. These will make some circular
+                    windows for this building.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 101</div>
+                    Fill in the windows with your secondary color for this building. Also add a <kbd>margin</kbd> of
+                    <kbd>10%</kbd> to give the windows some space.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 102</div>
+                    The windows are stacked on top of each other on the rightmost purple building. Turn the building
+                    into a flexbox parent, and use the <kbd>flex-wrap</kbd> property to put the windows side by side,
+                    and push them down to a new row when they don't fit.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 103</div>
+                    This building is going to have another triangle on top. Give the top section a <kbd>border-top</kbd>
+                    of <kbd>5vh solid transparent</kbd>, and a <kbd>border-left</kbd> that is <kbd>8vw</kbd>,
+                    <kbd>solid</kbd>, and uses your building color variable as the color.
+                </div>
+            </li>
+        </ol>
+    </main>
+    <footer>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"
+            integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous">
+        </script>
+    </footer>
+</body>
+
+</html>

@@ -650,6 +650,118 @@
                     <kbd>solid</kbd>, and uses your building color variable as the color.
                 </div>
             </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 104</div>
+                    On to the next building! It's the green one in the foreground. Give it a
+                    <kbd>repeating-linear-gradient</kbd> with your building color from <kbd>0%</kbd> to <kbd>5%</kbd>,
+                    and <kbd>transparent</kbd> from <kbd>5%</kbd> to <kbd>10%</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 105</div>
+                    Add another <kbd>repeating-linear-gradient</kbd> below the one you just added. Give it a
+                    <kbd>90deg</kbd> direction, use your building color from <kbd>0%</kbd> to <kbd>12%</kbd> and window
+                    color <kbd>12%</kbd> to <kbd>44%</kbd>. This will make a bunch of rectangle windows.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 106</div>
+                    You don't need the <kbd>background-color</kbd> for this building anymore so you can remove that
+                    property.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 107</div>
+                    Finally! You made it to the last building! Add a repeating gradient to it with a <kbd>90deg</kbd>
+                    direction. Use the building color from <kbd>0%</kbd> to <kbd>10%</kbd> and <kbd>transparent</kbd>
+                    from <kbd>10%</kbd> to <kbd>30%</kbd>.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 108</div>
+                    Add another repeating gradient to this building; make it the same as the one you just added, except
+                    don't add the <kbd>90deg</kbd> direction and use your window color instead of the two
+                    <kbd>transparent</kbd> colors.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 109</div>
+                    You can remove the <kbd>background-color</kbd> for this building now, since it isn't needed.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 110</div>
+                    Okay, the buildings are done. Go back to the <kbd>*</kbd> selector and remove the <kbd>border</kbd>
+                    you applied to everything at the beginning and the buildings will come together.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 112</div>
+                    Give the <kbd>sky</kbd> class a <kbd>radial-gradient</kbd>. Use <kbd>#ffcf33</kbd> from
+                    <kbd>0%</kbd> to <kbd>20%</kbd>, <kbd>#ffff66</kbd> at <kbd>21%</kbd>, and <kbd>#bbeeff</kbd> at
+                    <kbd>100%</kbd>. This will add circular gradient to the background that will be your sun.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 113</div>
+                    At the top of the sky gradient color list, where you would put a direction for the gradient; add
+                    <kbd>circle closest-corner at 15% 15%</kbd>,. This will move the start of the gradient to
+                    <kbd>15%</kbd> from the top and left. It will make it end at the <kbd>closest-corner</kbd> and it
+                    will maintain a <kbd>circle</kbd> shape. These are some keywords built into gradients to describe
+                    how it behaves.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 114</div>
+                    Add an empty media query at the bottom of your stylesheet with a condition of <kbd>max-width:
+                        1000px</kbd>. Styles added in here will take effect when the document size is 1000px wide or
+                    less.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 115</div>
+                    <p>Copy and paste your whole <kbd>sky</kbd> class along with all of its properties and values into
+                        the media query. You are going to make another color scheme for the skyline that changes it from
+                        day to night.</p>
+                    <p>Note: You are going to need to scroll past the editable region to copy the class.</p>
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 116</div>
+                    In the sky class of the media query, change the two <kbd>#ffcf33</kbd> color values to
+                    <kbd>#ccc</kbd>, the <kbd>#ffff66</kbd> to <kbd>#445</kbd>, and the <kbd>#bbeeff</kbd> to
+                    <kbd>#223</kbd>. Then you can resize your window to see the background change colors.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 117</div>
+                    Add a <kbd>:root</kbd> selector to the top of your media query. Then redefine all four of the
+                    <kbd>--building-color</kbd> variables to use the value <kbd>#000</kbd> there.
+                </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-start">
+                <div class="ms-2 me-auto">
+                    <div class="fw-bold">Step 118</div>
+                    <p>Lastly, in the <kbd>:root</kbd> selector of the media query, redefine all four of the
+                        <kbd>--window-color</kbd> variables to use <kbd>#777</kbd>. When you're done, resize the window
+                        and watch it go from day to night.</p>
+                    <p>Variables are primarily used with colors, and that's how you used them here. But they can be
+                        given any value and used on any property. Your project looks great!</p>
+                </div>
+            </li>
         </ol>
     </main>
     <footer>
